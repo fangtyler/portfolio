@@ -1,0 +1,235 @@
+/*********************/
+/* Common Components */
+/*********************/
+
+body {
+    font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-weight: 400;
+    color: #3B3B3B;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+a {
+    color: #3B3B3B;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    padding: 40px 0 8 0;
+    margin: 0 auto;
+    height: 60px;
+    font-size: 16px;
+    z-index: 1;
+    position: relative;
+    max-width: 1200px;
+}
+
+.nav {
+    padding: 0 0 0 20px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav-bar {
+    position: absolute;
+    right: 0px;
+}
+
+.selected {
+    font-weight: 800;
+}
+
+/*********************/
+/*  Portfolio Page   */
+/*********************/
+
+.project-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    min-height: 900px;
+    margin-bottom: 100px;
+}
+
+.project-cover {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.project-cover:hover {
+    opacity: 0.5;
+    filter: blur(4px);
+    cursor: pointer;
+}
+
+.project-title {
+    position: relative;
+    top: -220px;
+    font-size: 30px;
+    height: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.project-cover:hover + .project-title {
+    opacity: 1;
+}
+
+td {
+    height: 420px;
+    width: 50%;
+}
+
+td a {
+    text-decoration: none;
+}
+
+/*********************/
+/*   About Me Page   */
+/*********************/
+
+.centered {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me {
+    width: 600px;
+    line-height: 36px;
+    text-align: left;
+    min-height: 1000px;
+    margin-bottom: 100px;
+}
+
+.about-heading {
+    font-size: 24px;
+    margin: 20 auto;
+}
+
+.about-me-description {
+    margin-top: 36px;
+}
+
+.polaroid {
+    position: relative;
+    width: 320px;
+}
+
+.polaroid img {
+    border: 12px solid #fff;
+    border-bottom: 60px solid #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 5px 5px 5px #777;
+    margin-bottom: 12px;
+}
+
+.polaroid p {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    bottom: 10px;
+    font: 400 24px/1 'Amatic SC', cursive;
+    color: #444444;
+}
+
+.polaroid:hover {
+    transform: rotate(-3deg);
+}
+
+/*********************/
+/*   Project  Page   */
+/*********************/
+
+.project {
+    width: 800px;
+    line-height: 36px;
+    text-align: left;
+    min-height: 6400px;
+    margin-bottom: 100px;
+}
+
+.project-heading {
+    font-size: 24px;
+    margin: 20 auto;
+}
+
+.project-heading2 {
+    font-size: 20px;
+    margin: 40 auto;
+}
+
+.project-description {
+    margin-top: 36px;
+}
+
+.two-column {
+    display: flex;
+}
+
+.left-picture {
+    width: 400px;
+    margin-right: 20px;
+}
+
+.right-text {
+    width: 400px;
+}
+
+.left-text {
+    width: 400px;
+}
+
+.right-picture {
+    width: 400px;
+    margin-left: 20px;
+}
+
+
+/*********************/
+/*   Footer Section  */
+/*********************/
+
+footer {
+    color: #FFFFFF;
+    background-color: #3B3B3B;
+    display: block;
+    padding: 30px 0 8 0;
+    height: 80px;
+    font-size: 16px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
+.footer-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #3B3B3B;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
